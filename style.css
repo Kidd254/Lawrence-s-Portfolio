@@ -94,6 +94,7 @@ header nav div .menu-bar {
   line-height: 24px;
   color: #7f8cff;
   white-space: nowrap;
+  padding-top: 12px;
 }
 
 .order {
