@@ -50,6 +50,7 @@ header nav div .menu-bar {
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 24px;
+  border-bottom-left-radius: 70px;
 }
 
 .introduction .title {
@@ -60,6 +61,7 @@ header nav div .menu-bar {
   font-size: 40px;
   width: 327px;
   height: 150px;
+  font-weight: bold;
   line-height: 52px;
   display: flex;
   align-items: center;
