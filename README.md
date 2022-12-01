@@ -56,9 +56,9 @@ Deployment
 
 👤 Author1
 
-    GitHub:[@kidd254](https://github.com/Kidd254)
-    Twitter:[@LawrenceKioko](https://twitter.com/lawrenc98789206)
-    LinkedIn:[Lawrence Kioko](https://www.linkedin.com/in/lawrence-kioko-972035240/)
+    [GitHub](https://github.com/Kidd254)
+    [Twitter](https://twitter.com/lawrenc98789206)
+    [Linkedin](https://www.linkedin.com/in/lawrence-kioko-972035240/)
 
 🔭 Future Features
     [text-style]- added dodgerblue color as the text color
