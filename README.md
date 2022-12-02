@@ -153,9 +153,9 @@ You can deploy this project using: github pages
 
 👤 **Author1**
   
-- GitHub: [@kidd254](https://github.com/Kidd254)
-- Twitter: [@lawrence kioko](https://twitter.com/twitterhandle)
-- LinkedIn: [Lawrence Kioko](https://www.linkedin.com/in/lawrence-kioko-972035240/)
+- GitHub: [@Kidd254](https://github.com/Kidd254)
+- Twitter: [@lawrenc98789206](https://twitter.com/lawrenc98789206)
+- LinkedIn: [lawrence-kioko-972035240/](https://www.linkedin.com/in/lawrence-kioko-972035240/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
