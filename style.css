@@ -695,3 +695,141 @@ header nav div .menu-bar {
   background: #e5e5e5;
   color: #5e6c84;
 }
+
+.resume:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.resume:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.resume:disabled {
+  background: #e5e5e5;
+  color: #5e6c84;
+}
+
+.contactform {
+  height: 800px;
+  width: 375px;
+  background-color: #6070ff;
+  background-image: url(.images/contact\ form\ shapes-mobile@2x.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border-top-left-radius: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.contactform .contact-title {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  height: 56px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 103px;
+}
+
+.contactform .contact-description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  width: 327px;
+  height: 102px;
+  margin-top: 10px;
+  margin-bottom: 87px;
+  text-align: center;
+}
+
+.contactform .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactform .contact-form .input-field {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+}
+
+#email {
+  margin-top: 20px;
+}
+
+.contactform .contact-form .input-field::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 15px 38px 15px 16px;
+  font-size: 17px;
+  color: #172b4d;
+}
+
+.contactform .contact-form .text-area {
+  width: 327px;
+  height: 170px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 18px;
+}
+
+.contactform .contact-form .text-area::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 15px 38px 15px 16px;
+  font-size: 15px;
+  color: #b3bac5;
+}
+
+.contactform .contact-form .submit-btn {
+  width: 140px;
+  height: 48px;
+  border-radius: 8px;
+  align-self: flex-start;
+  background-color: #fff;
+  border: none;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  margin-bottom: 45px;
+  margin-top: 22px;
+}
+
+.contactform .contact-form .submit-btn:hover {
+  background-color: #fcc;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
+.contactform .indicator {
+  margin-top: 0;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+}
+
+.img-sec2 {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
