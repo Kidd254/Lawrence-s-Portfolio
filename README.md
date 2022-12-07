@@ -52,9 +52,15 @@ You need to have a code editor pre-installed (preferably Vs Studio Code Editor).
 
 ### Setup
 
-Clone this repository to your desired folder:
-1. Create a directory from which you will clone your repository.
-2. open the newly created directory and clone the repository using the git clone command
+Step 1:if you don't have git installed on your machine you can download it from [here](https://git-scm.com/downloads).
+
+Once you have git installed on your machine you can clone your project by running the command below to clone your project to your local machine
+
+`git clone <your project link>`
+
+Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your project page and clicking on `Download ZIP`
+
+Step 2: Locate the folder where you cloned your project and open the `index.html` file in your browser to view your project.
 
 ### Install
 
@@ -85,19 +91,13 @@ You can deploy this project using: github pages
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Author1**
   
 - GitHub: [@Kidd254](https://github.com/Kidd254)
 - Twitter: [@lawrenc98789206](https://twitter.com/lawrenc98789206)
 - LinkedIn: [lawrence-kioko-972035240/](https://www.linkedin.com/in/lawrence-kioko-972035240/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/Uthmanbello)
-- Twitter: [@twitterhandle](https://twitter.com/UthmanDeRoyale)
-- LinkedIn: [LinkedIn](linkedin.com/in/uthman-igein-bello-imoukhuede)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +120,6 @@ If you like this project kindly offer your support in terms of contributions. If
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Vote of thanks to Microverse for giving me an opportunity and ispiring me to complete this project.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
