@@ -850,6 +850,7 @@ header nav div .menu-bar {
 
   .menu-bar {
     display: none;
+    height: 0;
   }
 
   .nav-links {
