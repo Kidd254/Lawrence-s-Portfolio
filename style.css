@@ -833,6 +833,18 @@ header nav div .menu-bar {
   width: 0;
 }
 
+.port1 {
+  display: none;
+}
+
+.ab1 {
+  display: none;
+}
+
+.cont1 {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
@@ -848,18 +860,19 @@ header nav div .menu-bar {
     padding: 25px 620px 0 155px;
   }
 
-  .menu-bar {
+  header nav div .menu-bar {
     display: none;
     height: 0;
   }
 
-  .nav-links {
+  header nav .nav-links {
     padding-top: 15px;
     padding-right: 142px;
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style: none;
+    text-decoration: none;
   }
 
   .port1 {
@@ -870,10 +883,12 @@ header nav div .menu-bar {
     color: #344563;
     flex: none;
     order: 0;
+    display: block;
     flex-grow: 0;
   }
 
   .ab1 {
+    display: block;
     padding: 10px 12px;
     font-weight: 500;
     font-size: 15px;
@@ -885,6 +900,7 @@ header nav div .menu-bar {
   }
 
   .cont1 {
+    display: block;
     padding: 10px 12px;
     font-weight: 500;
     font-size: 15px;
