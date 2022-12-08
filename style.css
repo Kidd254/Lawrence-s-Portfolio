@@ -839,8 +839,7 @@ header nav div .menu-bar {
   }
 
   header {
-    width: 1440px;
-    height: 72px;
+    width: 100%;
     background: #fff;
     overflow: hidden;
   }
@@ -851,8 +850,6 @@ header nav div .menu-bar {
 
   .menu-bar {
     display: none;
-    height: 0;
-    width: 0;
   }
 
   .nav-links {
@@ -873,7 +870,6 @@ header nav div .menu-bar {
     flex: none;
     order: 0;
     flex-grow: 0;
-    text-decoration: none;
   }
 
   .ab1 {
@@ -885,7 +881,6 @@ header nav div .menu-bar {
     flex: none;
     order: 1;
     flex-grow: 0;
-    text-decoration: none;
   }
 
   .cont1 {
@@ -897,12 +892,11 @@ header nav div .menu-bar {
     flex: none;
     order: 2;
     flex-grow: 0;
-    text-decoration: none;
   }
 
   .introduction {
     padding: 46px 8px 76.54px 34.6px;
-    height: 721.46;
+    height: 721.46px;
     width: 1397.4px;
     background-image: url(.images/Header\ bg.jpg);
     background-size: cover;
