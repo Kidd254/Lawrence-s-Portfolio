@@ -906,10 +906,10 @@ header nav div .menu-bar {
   }
 
   .introduction .title {
-    margin-left: 260px;
+    padding-left: 260px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 48px;
     line-height: 60px;
     display: flex;
@@ -923,9 +923,9 @@ header nav div .menu-bar {
     animation-name: fadeInOut;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    white-space: nowrap;
-    width: 920px;
-    height: 122px;
+    white-space: wrap;
+    width: 30%;
+    height: auto;
   }
 
   /* @keyframes fadeInOut {
@@ -947,9 +947,9 @@ header nav div .menu-bar {
   } */
 
   .introduction .description {
-    margin: 12px 260px 12px 260px;
-    width: 920px;
-    height: 98px;
+    padding: 12px 260px 12px 260px;
+    width: 65%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -963,10 +963,9 @@ header nav div .menu-bar {
   }
 
   .introduction .social {
-    margin-top: 12px;
-    margin-left: 260px;
-    width: 117px;
-    height: 24px;
+    padding-left: 260px;
+    width: 10%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -982,15 +981,15 @@ header nav div .menu-bar {
   .introduction .social-links {
     display: flex;
     flex-direction: row;
-    margin-top: 14px;
-    margin-left: 260px;
+    padding-top: 14px;
+    padding-left: 260px;
     flex: none;
     order: 4;
   }
 
   .section1 {
-    width: 1156px;
-    height: 496px;
+    width: 85%;
+    height: auto;
     flex-grow: 0;
     margin: 142px;
     background: #fff;
@@ -1015,8 +1014,8 @@ header nav div .menu-bar {
 
   .right-block {
     padding: 24px 24px 24px 22px;
-    height: 448px;
-    width: 544px;
+    height: 40%;
+    width: auto;
     border-radius: 8px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1032,8 +1031,8 @@ header nav div .menu-bar {
     padding-bottom: 7px;
     gap: 24px;
     left: 590px;
-    width: 544px;
-    height: 465px;
+    width: 50%;
+    height: auto;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -1059,16 +1058,16 @@ header nav div .menu-bar {
     padding-right: 24px;
     margin-bottom: 0;
     padding-left: 24px;
-    height: 98px;
-    width: 496px;
+    height: auto;
+    width: 75%;
   }
 
   .section-titlef {
     display: inline;
     padding: 0;
     margin: 0;
-    width: 496px;
-    height: 46px;
+    width: 70%;
+    height: auto;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1082,8 +1081,8 @@ header nav div .menu-bar {
     display: inline;
     padding: 0;
     margin: 0;
-    width: 496px;
-    height: 46px;
+    width: 70%;
+    height: auto;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1098,14 +1097,13 @@ header nav div .menu-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
-    width: 320px;
-    height: 40px;
+    width: 70%;
+    height: auto;
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 0;
-    padding-top: 12px;
+    padding-top: 24px;
   }
 
   .list1 {
@@ -1167,8 +1165,8 @@ header nav div .menu-bar {
     flex: none;
     order: 1;
     flex-grow: 0;
-    width: 496px;
-    height: 70px;
+    width: 90%;
+    height: auto;
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -1180,8 +1178,8 @@ header nav div .menu-bar {
     flex: none;
     order: 2;
     flex-grow: 0;
-    height: 24px;
-    width: 316px;
+    height: auto;
+    width: 60%;
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -1258,8 +1256,8 @@ header nav div .menu-bar {
   }
 
   .action {
-    width: 496px;
-    height: 153px;
+    width: 65%;
+    height: auto;
     flex: none;
     order: 3;
     flex-grow: 0;
@@ -1270,8 +1268,8 @@ header nav div .menu-bar {
   .btn {
     margin: 16px 372px 89px 0;
     padding: 12px;
-    width: 124px;
-    height: 48px;
+    width: 35%;
+    height: auto;
     background: #4053fc;
     border-radius: 8px;
     color: #fff;
@@ -1317,8 +1315,8 @@ header nav div .menu-bar {
   }
 
   .section3 {
-    width: 1156px;
-    height: 496px;
+    width: 85%;
+    height: auto;
     margin: 142px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1353,8 +1351,8 @@ header nav div .menu-bar {
   }
 
   .section4 {
-    width: 1156px;
-    height: 496px;
+    width: 85%;
+    height: auto;
     margin: 142px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1365,8 +1363,8 @@ header nav div .menu-bar {
   }
 
   .section5 {
-    width: 1440px;
-    height: 668px;
+    width: 100%;
+    height: auto;
     margin-top: 142px;
     margin-left: 0;
     margin-right: 0;
