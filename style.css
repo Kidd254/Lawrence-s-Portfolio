@@ -810,12 +810,12 @@ header nav div .menu-bar {
   margin-top: 22px;
 }
 
-.contactform .contact-form .submit-btn:hover {
+/*.contactform .contact-form .submit-btn:hover {
   background-color: #fcc;
   width: 200px;
   height: 200px;
   transform: rotate(180deg);
-}
+}*/
 
 .contactform .indicator {
   margin-top: 0;
@@ -933,7 +933,7 @@ header nav div .menu-bar {
     height: 122px;
   }
 
-  @keyframes fadeInOut {
+  /*@keyframes fadeInOut {
     0% {
       color: cyan;
     }
@@ -949,7 +949,7 @@ header nav div .menu-bar {
     100% {
       color: dodgerblue;
     }
-  }
+  }*/
 
   .introduction .description {
     margin: 12px 260px 12px 260px;
@@ -1419,10 +1419,5 @@ header nav div .menu-bar {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 79.09px 74px 48.21px 75.34px;
-  }
-
-  .works {
-    height: 800px;
-    width: 375px;
   }
 }
