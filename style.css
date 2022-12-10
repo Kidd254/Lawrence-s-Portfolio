@@ -1553,12 +1553,12 @@ header nav div .menu-bar {
   
 }
   .contactform {
-    width: 1440px;
-    height: 846px;
+    width: 100%;
+    height: auto;
     background: #6070ff;
     background-image: url(.images/contact\ form\ background\ shapes@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 79.09px 74px 48.21px 75.34px;
+    margin: 79.09px 74px 48.21px 0;
   }
 }
