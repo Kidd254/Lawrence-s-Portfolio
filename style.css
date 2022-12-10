@@ -1451,39 +1451,107 @@ header nav div .menu-bar {
   .languages {
     display: flex;
     flex-direction: column;
-  }
-
-  .container {
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .language-list {
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .js1 {
+    align-items: flex-start;
+    width: 684px;
+    height: 216px;
     flex: none;
     order: 0;
   }
 
-  .js2 {
+  .container {
+    width: 684px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: none;
+    order: 0;
+  }
+
+  .lang {
+    width: 582px;
+    height: 24px;
+    color: #344563;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    flex: none;
+    order: 0;
+  }
+
+
+  .container1 {
+    width: 684px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     flex: none;
     order: 1;
   }
 
-  .js3 {
+  .container2 {
+    width: 684px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     flex: none;
     order: 2;
   }
 
+  .language-list {
+    width: 414px;
+    height: 144px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: none;
+    order: 1;
+    padding: 12px;
+  }
+
+  .language-list ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+  }
+
+   .l-list {
+    width: 122px;
+    height: 120px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+  }
+
+
+  .images {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #fff;
+  }
+
+  .js {
+    width: 98px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+    margin-top: 76px;
+    margin-left: 0;
+  }
+.btn1 {
+  width: 40px;
+  height: 40px;
+  
+}
   .contactform {
     width: 1440px;
     height: 846px;
