@@ -1423,7 +1423,7 @@ header nav div .menu-bar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 25%;
+    width: 35%;
     height: auto;
     flex: none;
     order: 0;
