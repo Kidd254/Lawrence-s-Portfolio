@@ -208,7 +208,6 @@ header nav div .menu-bar {
   height: 562px;
   width: 327px;
   background: #fff;
-  border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   order: 0;
@@ -502,8 +501,8 @@ header nav div .menu-bar {
 
 .section4 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-content: center;
   height: 612px;
   width: 327px;
   background: #fff;
@@ -1041,6 +1040,19 @@ header nav div .menu-bar {
     display: block;
   }
 
+  .right-block00 {
+    padding: 24px 24px 24px 22px;
+    height: 50%;
+    width: auto;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: block;
+  }
+
   .left-block {
     padding-top: 24px;
     padding-right: 22px;
@@ -1051,6 +1063,22 @@ header nav div .menu-bar {
     height: auto;
     flex: none;
     order: 1;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-block00 {
+    padding-top: 24px;
+    padding-right: 22px;
+    padding-bottom: 7px;
+    gap: 24px;
+    left: 590px;
+    width: 40%;
+    height: auto;
+    flex: none;
+    order: 0;
     flex-grow: 0;
     display: flex;
     flex-direction: column;
@@ -1272,7 +1300,7 @@ header nav div .menu-bar {
   }
 
   .action {
-    width: 65%;
+    width: 80%;
     height: auto;
     flex: none;
     order: 3;
@@ -1375,7 +1403,7 @@ header nav div .menu-bar {
     border-radius: 24px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: row-reverse;
   }
 
   .section5 {
