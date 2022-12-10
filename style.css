@@ -19,7 +19,6 @@ header {
 
 nav {
   display: flex;
-  flex-direction: row;
 }
 
 header nav .logo {
@@ -856,7 +855,7 @@ header nav div .menu-bar {
   }
 
   .logo {
-    padding: 25px 620px 0 155px;
+    padding: 25px 590px 0 155px;
   }
 
   header nav div .menu-bar {
@@ -1053,6 +1052,19 @@ header nav div .menu-bar {
     display: block;
   }
 
+  .right-block11 {
+    padding: 24px 24px 24px 22px;
+    height: 50%;
+    width: auto;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: block;
+  }
+
   .left-block {
     padding-top: 24px;
     padding-right: 22px;
@@ -1070,6 +1082,22 @@ header nav div .menu-bar {
   }
 
   .left-block00 {
+    padding-top: 24px;
+    padding-right: 22px;
+    padding-bottom: 7px;
+    gap: 24px;
+    left: 590px;
+    width: 40%;
+    height: auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-block11 {
     padding-top: 24px;
     padding-right: 22px;
     padding-bottom: 7px;
