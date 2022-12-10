@@ -809,12 +809,12 @@ header nav div .menu-bar {
   margin-top: 22px;
 }
 
-/* .contactform .contact-form .submit-btn:hover {
+.contactform .contact-form .submit-btn:hover {
   background-color: #fcc;
   width: 200px;
   height: 200px;
   transform: rotate(180deg);
-} */
+}
 
 .contactform .indicator {
   margin-top: 0;
@@ -943,7 +943,7 @@ header nav div .menu-bar {
     height: auto;
   }
 
-  /* @keyframes fadeInOut {
+  @keyframes fadeInOut {
     0% {
       color: cyan;
     }
@@ -959,7 +959,7 @@ header nav div .menu-bar {
     100% {
       color: dodgerblue;
     }
-  } */
+  }
 
   .introduction .description {
     padding: 12px 260px 12px 260px;
@@ -1479,7 +1479,6 @@ header nav div .menu-bar {
     order: 0;
   }
 
-
   .container1 {
     width: 684px;
     height: 72px;
@@ -1519,7 +1518,7 @@ header nav div .menu-bar {
     padding: 12px;
   }
 
-   .l-list {
+  .l-list {
     width: 122px;
     height: 120px;
     background: #f7f7f9;
@@ -1527,7 +1526,6 @@ header nav div .menu-bar {
     flex: none;
     order: 0;
   }
-
 
   .images {
     height: 48px;
@@ -1547,11 +1545,12 @@ header nav div .menu-bar {
     margin-top: 76px;
     margin-left: 0;
   }
-.btn1 {
-  width: 40px;
-  height: 40px;
-  
-}
+
+  .btn1 {
+    width: 40px;
+    height: 40px;
+  }
+
   .contactform {
     width: 100%;
     height: auto;
