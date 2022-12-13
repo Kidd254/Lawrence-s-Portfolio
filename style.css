@@ -19,7 +19,6 @@ header {
 
 nav {
   display: flex;
-  flex-direction: row;
 }
 
 header nav .logo {
@@ -809,14 +808,7 @@ header nav div .menu-bar {
   margin-top: 22px;
 }
 
-.contactform .contact-form .submit-btn:hover {
-  background-color: #fcc;
-  width: 200px;
-  height: 200px;
-  transform: rotate(180deg);
-}
-
-.contactform .indicator {
+/* .contactform .indicator {
   margin-top: 0;
   width: 134px;
   height: 5px;
@@ -824,7 +816,7 @@ header nav div .menu-bar {
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
-}
+} */
 
 .img-sec2 {
   display: none;
@@ -856,7 +848,11 @@ header nav div .menu-bar {
   }
 
   .logo {
+<<<<<<< HEAD
     padding: 25px 500px 0 155px;
+=======
+    padding: 25px 590px 0 155px;
+>>>>>>> 47a6080ceeb6affb4f47847d5b39ce27ddcb3150
   }
 
   header nav div .menu-bar {
@@ -1053,6 +1049,19 @@ header nav div .menu-bar {
     display: block;
   }
 
+  .right-block11 {
+    padding: 24px 24px 24px 22px;
+    height: 50%;
+    width: auto;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    display: block;
+  }
+
   .left-block {
     padding-top: 24px;
     padding-right: 22px;
@@ -1070,6 +1079,22 @@ header nav div .menu-bar {
   }
 
   .left-block00 {
+    padding-top: 24px;
+    padding-right: 22px;
+    padding-bottom: 7px;
+    gap: 24px;
+    left: 590px;
+    width: 40%;
+    height: auto;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-block11 {
     padding-top: 24px;
     padding-right: 22px;
     padding-bottom: 7px;
@@ -1223,7 +1248,7 @@ header nav div .menu-bar {
     order: 2;
     flex-grow: 0;
     height: auto;
-    width: 60%;
+    width: 80%;
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -1254,6 +1279,7 @@ header nav div .menu-bar {
     order: 1;
     flex-grow: 0;
     padding: 4px 12px;
+    margin-right: 12px;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -1270,7 +1296,7 @@ header nav div .menu-bar {
     flex: none;
     order: 2;
     flex-grow: 0;
-    padding: 4px 12px;
+    padding: 4px 12px 4px 12px;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
