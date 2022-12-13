@@ -34,7 +34,7 @@ This project is built using pure Html and css
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [a link to the online version](https://kidd254.github.io/Lawrence-s-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
