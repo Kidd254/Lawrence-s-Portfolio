@@ -46,7 +46,7 @@ header nav div .menu-bar {
   height: 600px;
   background: #fff;
   padding-top: 12px;
-  background-image: url(.images/header-shapes\ mobile.png);
+  background-image: url(images/header-shapes\ mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 24px;
@@ -714,7 +714,7 @@ header nav div .menu-bar {
   height: 800px;
   width: 375px;
   background-color: #6070ff;
-  background-image: url(.images/contact\ form\ shapes-mobile@2x.svg);
+  background-image: url(images/contact\ form\ shapes-mobile@2x.svg);
   background-repeat: no-repeat;
   background-position: right;
   border-top-left-radius: 70px;
@@ -866,7 +866,7 @@ header nav div .menu-bar {
 
   header nav .nav-links {
     padding-top: 15px;
-    padding-right: 142px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -914,7 +914,7 @@ header nav div .menu-bar {
     padding: 46px 8px 76.54px 34.6px;
     height: 721.46px;
     width: 1397.4px;
-    background-image: url(.images/Header\ bg.jpg);
+    background-image: url(images/Header\ bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -1555,7 +1555,7 @@ header nav div .menu-bar {
     width: 100%;
     height: auto;
     background: #6070ff;
-    background-image: url(.images/contact\ form\ background\ shapes@2x.png);
+    background-image: url(images/contact\ form\ background\ shapes@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 79.09px 74px 48.21px 0;
