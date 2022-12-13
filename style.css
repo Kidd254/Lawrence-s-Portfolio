@@ -856,10 +856,10 @@ header nav div .menu-bar {
     height: 0;
   }
 
-.img-section2 {
-  display: none;
-  height: 0;
-}
+  .img-section2 {
+    display: none;
+    height: 0;
+  }
 
   header nav .nav-links {
     padding-top: 15px;
