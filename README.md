@@ -36,6 +36,10 @@ This project is built using pure Html and css
 
 - [a link to the online version](https://kidd254.github.io/Lawrence-s-Portfolio/)
 
+- [a link to a presentation about this project](https://www.loom.com/share/fa58332dceeb4851b77c2a69dcf63e69)
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

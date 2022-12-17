@@ -433,6 +433,7 @@ header nav div .menu-bar {
 .section2 {
   display: flex;
   flex-direction: column;
+  padding-left: 12px;
   align-items: center;
   height: 612px;
   width: 327px;
@@ -509,6 +510,7 @@ header nav div .menu-bar {
   border-radius: 16px;
   flex: none;
   order: 0;
+  padding-left: 12px;
   flex-grow: 0;
   margin-left: 24px;
   margin-right: 24px;
