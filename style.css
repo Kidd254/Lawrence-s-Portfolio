@@ -225,6 +225,15 @@ header nav div .menu-bar {
   flex-grow: 0;
 }
 
+.right-block00 {
+  height: 220px;
+  width: 295px;
+  padding: 16px 16px 12px 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .left-block {
   display: flex;
   flex-direction: column;
@@ -1350,8 +1359,8 @@ header nav div .menu-bar {
   }
 
   .section2 {
-    width: 1156px;
-    height: 496px;
+    width: 85%;
+    height: auto;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
