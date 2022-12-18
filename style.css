@@ -1357,7 +1357,7 @@ header nav div .menu-bar {
     border-radius: 24px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: row-reverse;
     margin: 142px;
   }
 
