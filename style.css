@@ -8,21 +8,31 @@
 
 body {
   background: #e5e5e5;
+  margin: 0;
 }
 
 header {
   height: 72px;
-  width: 375px;
+  width: 100%;
   padding-left: 24px;
+  box-sizing: border-box;
   background: #fff;
 }
 
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-items {
-  position: relative;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
 }
 
 .nav-links1 {
@@ -50,9 +60,10 @@ nav {
 }
 
 .nav-links1.open-menu {
-  width: 375px;
-  height: 668px;
+  width: 100%;
+  height: 100vh;
   position: absolute;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +72,7 @@ nav {
   overflow: hidden;
   top: 0;
   right: 0;
+  flex-direction: column;
 }
 
 #btn {
@@ -69,7 +81,6 @@ nav {
 }
 
 header nav .logo {
-  margin: 26px 223px 26px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -80,30 +91,43 @@ header nav .logo {
 
 header nav div .menu-bar {
   width: 18px;
-  height: 12px;
+  height: 20px;
   color: #6070ff;
-  margin-top: 26px;
   font-size: 24px;
-  margin-right: 35px;
   cursor: pointer;
   position: absolute;
   display: block;
+  z-index: 2;
+}
+
+ul.nav-links {
+  display: none;
 }
 
 .menu-icons {
   position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .introduction {
-  width: 375px;
+  width: 100%;
   height: 600px;
   background: #fff;
   padding-top: 12px;
   background-image: url(images/header-shapes\ mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 24px;
+  padding-left: 55px;
   border-bottom-left-radius: 70px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introduction .title {
