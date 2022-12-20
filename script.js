@@ -8,9 +8,11 @@ menuBar.onclick= function(){
     menuBox.classList.toggle("open-menu");
 }
 
-menuItems.onclick= function(){
-    menuBox.style.display = "none";
-    menuBox.classList.toggle("open-menu");
+for(let i=0; i<menuItems.length; i++){
+    menuItems[i].onclick= function(){
+        menuBox.style.display = "none";
+        menuBox.classList.toggle("open-menu");
+    }
 }
 
 closingBtn.onclick= function(){
