@@ -21,18 +21,24 @@ nav {
   display: flex;
 }
 
+.menu-items {
+  position: relative;
+}
+
 .nav-links1 {
   width: 0;
   height: 0;
-  left: 0;
+  display: none;
   right: 0;
   top: 0;
   bottom: 0;
   background: #6070ff;
   mix-blend-mode: multiply;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
+  position: absolute;
 }
 
 .nav-links1 ul li {
@@ -47,9 +53,14 @@ nav {
   color: #fff;
 }
 
-.nav-links1 .open-menu {
-  width: 100%;
-  height: 100vh;
+.nav-links1.open-menu {
+  width: 375px;
+  height: 665px;
+}
+
+#btn {
+  color: red;
+  display: none;
 }
 
 header nav .logo {
@@ -69,6 +80,7 @@ header nav div .menu-bar {
   margin-top: 26px;
   font-size: 24px;
   margin-right: 35px;
+  cursor: pointer;
 }
 
 .introduction {
@@ -1628,5 +1640,11 @@ header nav div .menu-bar {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 79.09px 74px 48.21px 0;
+  }
+
+  .nav-links1 {
+    height: 0;
+    width: 0;
+    display: none;
   }
 }
