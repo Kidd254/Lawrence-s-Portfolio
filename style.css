@@ -81,6 +81,7 @@ header nav div .menu-bar {
   font-size: 24px;
   margin-right: 35px;
   cursor: pointer;
+  position: relative;
 }
 
 .introduction {
