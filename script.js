@@ -6,6 +6,8 @@ let menuItems = document.getElementsByClassName("h-menu");
 menuBar.onclick= function(){
     menuBox.style.display = "block";
     menuBox.classList.toggle("open-menu");
+    menuBar.style.display= "none";
+    closingBtn.style.display="block";
 }
 
 for(let i=0; i<menuItems.length; i++){
@@ -18,4 +20,7 @@ for(let i=0; i<menuItems.length; i++){
 closingBtn.onclick= function(){
     menuBox.style.display = "none";
     menuBox.classList.toggle("open-menu");
+    menuBar.style.display= "block";
+    closingBtn.style.display="none";
 }
+
