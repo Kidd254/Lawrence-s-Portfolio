@@ -70,6 +70,7 @@ nav {
   background: #6070ff;
   mix-blend-mode: multiply;
   overflow: hidden;
+  opacity: 0.8;
   top: 0;
   right: 0;
   flex-direction: column;
