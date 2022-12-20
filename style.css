@@ -21,6 +21,37 @@ nav {
   display: flex;
 }
 
+.nav-links1 {
+  width: 0;
+  height: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav-links1 ul li {
+  text-decoration: none;
+}
+
+.nav-links1 ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.nav-links1 .open-menu {
+  width: 100%;
+  height: 100vh;
+}
+
 header nav .logo {
   margin: 26px 223px 26px 0;
   font-weight: 700;
