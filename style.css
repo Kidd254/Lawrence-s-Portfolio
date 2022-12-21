@@ -19,6 +19,26 @@ header {
   background: #fff;
 }
 
+#pop-up-main {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #C1C7D0;
+}
+
+.pop-content {
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

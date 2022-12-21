@@ -5,6 +5,36 @@ const closingBtn = document.getElementById('btn');
 const menuItems = document.getElementsByClassName('h-menu');
 const menuContainer = document.getElementsByClassName('menu-items');
 
+const popUp = (info) => {
+  debugger;
+  const popUpContainer = document.createElement('section');
+  popUpContainer.id = "pop-up-main";
+  popUpContainer.innerHTML = `<div class="pop-content">
+    <div class="pop-up-header">
+      <h1 class="section-title">${info.title}</h1>
+      <button id="closing-btn-pop">
+        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
+      </button>
+    </div>
+    <div class="pop-up-image"></div>
+    <div class="pop-up-content">
+      <p class="pop-up-description"></p>
+      <ul class=""></ul>
+    </div>
+    <div class="pop-up-buttons"></div>
+  </div>
+  `;
+
+  
+  document.body.appendChild(popUpContainer);
+  const closingBtn = document.getElementById('closing-btn-pop');
+  closingBtn.addEventListener('click', () => {
+    popUpContainer.remove();
+  })
+
+
+};
+
 menuBar.addEventListener('click', ()=>{
   menuBox.style.display = 'flex';
   menuBox.classList.toggle('open-menu');
@@ -32,8 +62,6 @@ closingBtn.addEventListener('click', ()=>{
 });
 
 const sections = document.querySelector('.sections');
-let output = '';
-
 const sectionsCard = [
   {
     title: 'Tonic',
@@ -74,8 +102,9 @@ const sectionsCard = [
 ];
 
 sectionsCard.forEach((info) => {
-  output += `<article class="dynamic-card">
-  <div class="right-block">
+  let output =  document.createElement('article');
+  output.className = 'dynamic-card';
+  output.innerHTML= `<div class="right-block">
             <img class="img-section1" src="${info.image}" alt="project image">
             <img class="img-sec1" src="images/Snapshoot Portfolio-section1.png" alt="project image">
         </div>
@@ -105,8 +134,7 @@ sectionsCard.forEach((info) => {
             <div class="action">
                 <button class="btn btn-dynamic">See Project</button>
             </div>
-        </div>
-       </article>`;
+        </div>`;
 
   /*output += `<div id="w2" class="work1">
   <div class="work1Discription" id="w2work1Discription">
@@ -128,7 +156,12 @@ sectionsCard.forEach((info) => {
   <p class="sourcelink" hidden>${info.sourceLink}</p>
   <button class="btn1" id="w2button">See Project</button>
 </div>`;*/
-  sections.innerHTML = output;
+  debugger;
+  const button = output.querySelector('.btn-dynamic');
+  button.addEventListener('click', () => {
+    popUp(info);
+  });
+  sections.appendChild(output);
 });
 
 const container = document.querySelector('.work-cards');
@@ -141,7 +174,6 @@ const description = document.querySelector('.recent-description');
 const liveLink = document.querySelector('.live');
 const sourceLink = document.querySelector('.source');
 
-const button = container.querySelectorAll('.btn-dynamic');
 const recentTitle = container.querySelectorAll('.title');
 const recentDescription = container.querySelectorAll('.description');
 const recentlivelink = container.querySelectorAll('.livelink');
