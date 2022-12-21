@@ -67,22 +67,6 @@ const sectionsCard = [
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
   },
-  {
-    title: 'Data Dashboard Healthcare',
-    description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'css', 'javascript'],
-    liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
-    sourceLink: 'https://github.com/ibtisam34/My-Portfolio',
-  },
-  {
-    title: 'Website Protfolio',
-    description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'css', 'javascript'],
-    liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
-    sourceLink: 'https://github.com/ibtisam34/My-Portfolio',
-  },
 ];
 
 sectionsCard.forEach((info) => {
