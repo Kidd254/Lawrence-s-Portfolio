@@ -951,6 +951,10 @@ ul.nav-links {
     height: 0;
   }
 
+  .menu-bar {
+display: none;
+  }
+
   header nav .nav-links {
     padding-top: 15px;
     padding-right: 50px;
