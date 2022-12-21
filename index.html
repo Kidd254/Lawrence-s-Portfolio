@@ -11,25 +11,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1a66ebfe2a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <section>
-        <header>
-            <nav>
-                <a class="logo">Lawrence</a>
-                <div>
-                    <i class="fa-solid fa-bars menu-bar"></i>
-                </div>
-                <ul class="nav-links">
-                    <li class="port1"><a href="#portfolio">Portfolio </a></li>
-                    <li class="ab1"><a href="#about">About </a></li>
-                    <li class="cont1"><a href="#contact">Contact</a></li>
-                </ul>
-
-
-            </nav>
-        </header>
+        <section>
+            <header>
+                <nav>
+                    <a class="logo">Lawrence</a>
+                    <div class="menu-icons">
+                        <i class="fa-solid fa-bars menu-bar" id="menu_bar"></i>
+                        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="port1"><a href="#portfolio">Portfolio </a></li>
+                        <li class="ab1"><a href="#about">About </a></li>
+                        <li class="cont1"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="menu-items">
+                        <ul class="nav-links1" id="menu">
+                            <li><a class="h-menu" href="#portfolio">Portfolio </a></li>
+                            <li><a class="h-menu" href="#about">About </a></li>
+                            <li><a class="h-menu" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </section>
         <section class="introduction">
             <h1 class="title"> I'm Lawrence Glad to See You!</h1>
             <p class="description">I’m a software developer! I can help you build a product , feature or website Look
@@ -44,7 +52,6 @@
                 <li><a href="https://github.com/Kidd254"><i class="fa-brands fa-github li4"></i></a></li>
                 <li><a href="https://angel.co/jobs?ref=onboarding"><i class="fa-brands fa-angellist li5"></i></a></li>
             </ul>
-
         </section>
         <section class="section1">
             <div class="right-block">
@@ -276,9 +283,8 @@
                 <input type="submit" class="submit-btn" value="Get in Touch">
             </form>
             <hr class="indicator" />
-
-
         </section>
+        <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
