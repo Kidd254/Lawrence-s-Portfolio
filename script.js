@@ -132,7 +132,7 @@ sectionsCard.forEach((info) => {
                 </li>
             </ul>
             <div class="action">
-                <button class="btn btn-dynamic">See Project</button>
+                <button class="btn btn-dynamic" hidden>${info.sourceLink}</button>
             </div>
         </div>`;
 
@@ -164,7 +164,7 @@ sectionsCard.forEach((info) => {
   sections.appendChild(output);
 });
 
-const container = document.querySelector('.work-cards');
+const container = document.querySelector('.sections');
 const recent = document.querySelector('.Recentwork1');
 const closeIcon = document.querySelector('.crossimg');
 const css = document.querySelector('.css-display');
@@ -174,6 +174,7 @@ const description = document.querySelector('.recent-description');
 const liveLink = document.querySelector('.live');
 const sourceLink = document.querySelector('.source');
 
+const button = container.querySelectorAll('.btn1');
 const recentTitle = container.querySelectorAll('.title');
 const recentDescription = container.querySelectorAll('.description');
 const recentlivelink = container.querySelectorAll('.livelink');
@@ -189,18 +190,3 @@ for (let i = 0; i < button.length; i += 1) {
     recent.classList.add('active');
   });
 }
-closeIcon.addEventListener('click', () => {
-  css.classList.remove('show');
-  recent.classList.remove('active');
-});
-
-multiProject.addEventListener('click', () => {
-  css.classList.add('show');
-  recent.classList.add('active');
-});
-
-function showMessage(input, message) {
-  const msg = input.parentNode.querySelector('small');
-  const emailInput = document.getElementById('email');
-  msg.innerText = message;
-};
