@@ -5,35 +5,6 @@ const closingBtn = document.getElementById('btn');
 const menuItems = document.getElementsByClassName('h-menu');
 const menuContainer = document.getElementsByClassName('menu-items');
 
-const popUp = (info) => {
-  debugger;
-  const popUpContainer = document.createElement('section');
-  popUpContainer.id = "pop-up-main";
-  popUpContainer.innerHTML = `<div class="pop-content">
-    <div class="pop-up-header">
-      <h1 class="section-title">${info.title}</h1>
-      <button id="closing-btn-pop">
-        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
-      </button>
-    </div>
-    <div class="pop-up-image"></div>
-    <div class="pop-up-content">
-      <p class="pop-up-description"></p>
-      <ul class=""></ul>
-    </div>
-    <div class="pop-up-buttons"></div>
-  </div>
-  `;
-
-  
-  document.body.appendChild(popUpContainer);
-  const closingBtn = document.getElementById('closing-btn-pop');
-  closingBtn.addEventListener('click', () => {
-    popUpContainer.remove();
-  })
-
-
-};
 
 menuBar.addEventListener('click', ()=>{
   menuBox.style.display = 'flex';
@@ -62,6 +33,7 @@ closingBtn.addEventListener('click', ()=>{
 });
 
 const sections = document.querySelector('.sections');
+let pop = "";
 const sectionsCard = [
   {
     title: 'Tonic',
@@ -70,8 +42,9 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio.png',
+    image: '/images/Snapshoot Portfolio.png',
   },
+
   {
     title: 'Multi-Post Stories',
     description:
@@ -101,70 +74,34 @@ const sectionsCard = [
   },
 ];
 
-sectionsCard.forEach((info) => {
-  let output =  document.createElement('article');
-  output.className = 'dynamic-card';
-  output.innerHTML= `<div class="right-block">
-            <img class="img-section1" src="${info.image}" alt="project image">
-            <img class="img-sec1" src="images/Snapshoot Portfolio-section1.png" alt="project image">
-        </div>
-        <div class="left-block">
-            <div class="experience">
-                <h1 class="section-title">${info.title}</h1>
-                <h1 class="section-titlef">Facebook 360</h1>
-                <ul class="list">
-                    <li class="list1">CANOPY</li>
-                    <li class="list2">Back End Dev</li>
-                    <li class="list3">2015</li>
-                </ul>
-            </div>
-            <p class="section-description0">${info.description}</p>
-            <p class="section-description1">${info.description}</p>
-            <ul class="tags">
-                <li class="li11">
-                    <article class="text1">${info.technology[0]}</article>
-                </li>
-                <li class="li22">
-                    <article class="text2">${info.technology[1]}</article>
-                </li>
-                <li class="li33">
-                    <article class="text3">${info.technology[2]}</article>
-                </li>
-            </ul>
-            <div class="action">
-                <button class="btn btn-dynamic" hidden>${info.sourceLink}</button>
-            </div>
-        </div>`;
 
-  /*output += `<div id="w2" class="work1">
+
+sectionsCard.forEach((data) => {
+  pop += `<div id="w2" class="work1">
   <div class="work1Discription" id="w2work1Discription">
     <h2>
-      <span id="w2d">${info.title}</span>
+      <span id="w2d">${data.title}</span>
     </h2>
+    <div class="pop-up-image">${data.image}</div>
     <p>
-    ${info.description}
+    ${data.description}
     </p>
     <ul class="category">
-      <li>${info.technology[0]}</li>
-      <li>${info.technology[1]}</li>
-      <li>${info.technology[2]}</li>
+      <li>${data.technology[0]}</li>
+      <li>${data.technology[1]}</li>
+      <li>${data.technology[2]}</li>
     </ul>
   </div>
-  <p class="title" hidden>${info.title}</p>
-  <p class="description" hidden>${info.description}</p>
-  <p class="livelink" hidden>${info.liveLink}</p>
-  <p class="sourcelink" hidden>${info.sourceLink}</p>
+  <p class="title" hidden>${data.title}</p>
+  <p class="description" hidden>${data.description}</p>
+  <p class="livelink" hidden>${data.liveLink}</p>
+  <p class="sourcelink" hidden>${data.sourceLink}</p>
   <button class="btn1" id="w2button">See Project</button>
-</div>`;*/
-  debugger;
-  const button = output.querySelector('.btn-dynamic');
-  button.addEventListener('click', () => {
-    popUp(info);
-  });
-  sections.appendChild(output);
+</div>`;
+  sections.innerHTML = pop;
 });
 
-const container = document.querySelector('.sections');
+const container = document.querySelector('.work-cards');
 const recent = document.querySelector('.Recentwork1');
 const closeIcon = document.querySelector('.crossimg');
 const css = document.querySelector('.css-display');
@@ -190,3 +127,41 @@ for (let i = 0; i < button.length; i += 1) {
     recent.classList.add('active');
   });
 }
+closeIcon.addEventListener('click', () => {
+  css.classList.remove('show');
+  recent.classList.remove('active');
+});
+
+multiProject.addEventListener('click', () => {
+  css.classList.add('show');
+  recent.classList.add('active');
+});
+
+
+const popUp = (info) => {
+  debugger;
+  const popUpContainer = document.createElement('section');
+  popUpContainer.id = "pop-up-main";
+  popUpContainer.innerHTML = `<div class="pop-content">
+    <div class="pop-up-header">
+      <h1 class="section-title">${info.title}</h1>
+      <button id="closing-btn-pop">
+        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
+      </button>
+    </div>
+    <div class="pop-up-image"></div>
+    <div class="pop-up-content">
+      <p class="pop-up-description"></p>
+      <ul class=""></ul>
+    </div>
+    <div class="pop-up-buttons"></div>
+  </div>
+  `;
+
+  
+  document.body.appendChild(popUpContainer);
+  const closingBtn = document.getElementById('closing-btn-pop');
+  closingBtn.addEventListener('click', () => {
+    popUpContainer.remove();
+  })
+};

@@ -39,6 +39,346 @@ header {
   flex-direction: column;
 }
 
+.Recentwork1 {
+  z-index: 1;
+  top: 2.5vh;
+  width: 80%;
+  height: 95vh;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  overflow: scroll;
+  background-color: #fff;
+  justify-content: center;
+  padding: 45px 10px 30px 10px;
+  transition: visibility 0s ease 0.5s;
+}
+
+.Recentwork1.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.css-display {
+  display: none;
+}
+
+.css-display.show {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-header h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.crossimg {
+  cursor: pointer;
+}
+
+.works1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.worksimg1 {
+  width: 684px;
+  height: 448px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.worksdescription1 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.recent-btn {
+  margin: -20px 0;
+}
+
+.button1 {
+  padding: 12px;
+  gap: 12px;
+  width: 159px;
+  height: 48px;
+  background: #f55800;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+
+.button2 {
+  padding: 12px;
+  gap: 12px;
+  height: 48px;
+  background: #f55800;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+
+.button1 a {
+  text-decoration: none;
+  color: #fff;
+  display: inline;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.button2 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.button1 a img {
+  box-sizing: border-box;
+  left: 16.67%;
+  right: 16.67%;
+  top: 16.67%;
+  bottom: 16.67%;
+  border: 2px solid #67798e;
+}
+
+.button2 a img {
+  height: 20px;
+  width: 17.985200881958008px;
+  left: 0.013671875px;
+  top: 0;
+  border-radius: 0;
+}
+
+.f-img {
+  width: 100%;
+}
+
+.work1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("SVG/cardBG.svg");
+  background-repeat: no-repeat;
+  background-size: 118%;
+  padding-top: 84px;
+  gap: 12px;
+}
+
+.work1Description {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work1 h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+.work1 p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
+  padding-left: 2%;
+  list-style: none;
+}
+
+.category li {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  color: white;
+}
+
+.work1 button {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#w1,
+  #w2,
+  #w3,
+  #w4,
+  #w5,
+  #w6 {
+    position: relative;
+  }
+
+  #w1button,
+  #w4button,
+  #w2button,
+  #w5button {
+    position: absolute;
+    z-index: 3;
+    margin-top: 50%;
+    display: none;
+  }
+
+  #w3button,
+  #w6button {
+    position: absolute;
+    z-index: 3;
+    margin-top: 40%;
+    display: none;
+  }
+
+  #w1:hover #w1button,
+  #w2:hover #w2button,
+  #w3:hover #w3button,
+  #w4:hover #w4button,
+  #w5:hover #w5button,
+  #w6:hover #w6button {
+    display: flex;
+    justify-content: center;
+  }
+
+  #w1work1Discription,
+  #w2work1Discription,
+  #w3work1Discription,
+  #w4work1Discription,
+  #w5work1Discription,
+  #w6work1Discription {
+    position: absolute;
+    z-index: 2;
+  }
+
+  #w1:hover #w1work1Discription,
+  #w2:hover #w2work1Discription,
+  #w3:hover #w3work1Discription,
+  #w4:hover #w4work1Discription,
+  #w5:hover #w5work1Discription,
+  #w6:hover #w6work1Discription {
+    display: none;
+  }
+
+  #w5,
+  #w2 {
+    background-image: url("SVG/bgw2.svg");
+    background-repeat: no-repeat;
+    padding-top: 50%;
+  }
+
+  #w4,
+  #w1 {
+    background: url("SVG/w1w4bg.png");
+    background-repeat: no-repeat;
+    padding-top: 50%;
+  }
+
+  #w1:hover,
+  #w4:hover,
+  #w2:hover,
+  #w5:hover {
+    background-image: url("SVG/w1w4bg.png");
+    background-repeat: no-repeat;
+    padding-top: 50%;
+  }
+
+  #w6,
+  #w3 {
+    background-image: url("SVG/w6bgdt.png");
+    background-repeat: no-repeat;
+    padding-top: 59%;
+  }
+
+  #w6:hover,
+  #w3:hover {
+    background-image: url("SVG/w1w4bg.png");
+    background-repeat: no-repeat;
+    padding-top: 59%;
+  }
+
+  #w2 #w2b,
+  #w3 #w3b,
+  #w4 #w4b,
+  #w5 #w5b,
+  #w6 #w6b {
+    display: none;
+  }
+
+  #w2 #w2d,
+  #w3 #w3d,
+  #w4 #w4d,
+  #w5 #w5d,
+  #w6 #w6d {
+    display: inline-block;
+  }
+
+  .work1 .button {
+    display: none;
+  }
+
+  .footer hr {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 0;
+  }
+
+.logo:hover {
+  background: #ff6b6b;
+  transform: rotate(45deg);
+}
+
+.head:hover h2 {
+  color: green;
+  transition: 1s;
+}
+
+.head:hover p {
+  color: #e05304;
+  transition: 1s;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -323,9 +663,8 @@ ul.nav-links {
 .section1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 562px;
-  width: 327px;
+  height: 100vh;
+  width: 100%;
   background: #fff;
   border-radius: 16px;
   flex: none;
@@ -334,13 +673,16 @@ ul.nav-links {
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 114px;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-block {
-  height: 220px;
-  width: 295px;
-  padding: 16px 16px 12px 16px;
+  height: auto;
+  width: 100%;
   flex: none;
+  align-self: center;
+  margin: 16px 16px 12px 16px;
   order: 0;
   flex-grow: 0;
 }
