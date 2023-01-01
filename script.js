@@ -36,12 +36,12 @@ const sections = document.querySelector('.sections');
 let pop = "";
 const sectionsCard = [
   {
-    title: 'Tonic',
-    description:
+    title1: 'Tonic',
+    description1:
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology: ['html', 'css', 'javascript'],
-    liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
-    sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
+    technology1: ['html', 'css', 'javascript'],
+    liveLink1: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
+    sourceLink1: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
     image: '/images/Snapshoot Portfolio.png',
   },
 
@@ -80,22 +80,25 @@ sectionsCard.forEach((data) => {
   pop += `<div id="w2" class="work1">
   <div class="work1Discription" id="w2work1Discription">
     <h2>
-      <span id="w2d">${data.title}</span>
+      <span id="w2d">${data.title1}</span>
     </h2>
+    <button id="closing-btn-pop">
+        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
+      </button>
     <div class="pop-up-image">${data.image}</div>
     <p>
-    ${data.description}
+    ${data.description1}
     </p>
     <ul class="category">
-      <li>${data.technology[0]}</li>
-      <li>${data.technology[1]}</li>
-      <li>${data.technology[2]}</li>
+      <li>${data.technology1[0]}</li>
+      <li>${data.technology1[1]}</li>
+      <li>${data.technology1[2]}</li>
     </ul>
   </div>
-  <p class="title" hidden>${data.title}</p>
-  <p class="description" hidden>${data.description}</p>
-  <p class="livelink" hidden>${data.liveLink}</p>
-  <p class="sourcelink" hidden>${data.sourceLink}</p>
+  <p class="title" hidden>${data.title1}</p>
+  <p class="description" hidden>${data.description1}</p>
+  <p class="livelink" hidden>${data.liveLink1}</p>
+  <p class="sourcelink" hidden>${data.sourceLink1}</p>
   <button class="btn1" id="w2button">See Project</button>
 </div>`;
   sections.innerHTML = pop;
