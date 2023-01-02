@@ -4,7 +4,10 @@ const menuBar= document.getElementById('menu_bar');
 const closingBtn = document.getElementById('btn');
 const menuItems = document.getElementsByClassName('h-menu');
 const menuContainer = document.getElementsByClassName('menu-items');
-
+const popButton= document.getElementById('pop-btn');
+popButton.addEventListener('click', ()=>{
+popUp(sectionsCard[2]);
+});
 
 menuBar.addEventListener('click', ()=>{
   menuBox.style.display = 'flex';
@@ -42,7 +45,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-
+    images: "Images/Snapshoot Portfolio.png",
   },
 
   {
@@ -52,7 +55,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    
+    images: "Images/Snapshoot Portfolio.png",
   },
   {
     title: 'Tonic',
@@ -61,7 +64,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    
+    images: "Images/Snapshoot Portfolio.png",
   },
   {
     title: 'Multi-Post Stories',
@@ -70,6 +73,8 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
+    images: "Images/Snapshoot Portfolio.png",
+
   },
 ];
 
@@ -84,7 +89,7 @@ const popUp = (info) => {
         <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
       </button>
     </div>
-    <div class="pop-up-image"></div>
+    <div class="pop-up-image"><img src="${info.images}"></div>
     <div class="pop-up-content">
       <p class="pop-up-description">${info.description}</p>
       <ul class="">
