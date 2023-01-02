@@ -73,9 +73,45 @@ const sectionsCard = [
   },
 ];
 
+const popUp = (info) => {
+  debugger;
+  const popUpContainer = document.createElement('section');
+  popUpContainer.id = "pop-up-main";
+  popUpContainer.innerHTML = `<div class="pop-content">
+    <div class="pop-up-header">
+      <h1 class="section-title">${info.title}</h1>
+      <button id="closing-btn-pop">
+        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
+      </button>
+    </div>
+    <div class="pop-up-image"></div>
+    <div class="pop-up-content">
+      <p class="pop-up-description">${info.description}</p>
+      <ul class="">
+      <li>${info.technology[0]}</li>
+      <li>${info.technology[1]}</li>
+      <li>${info.technology[2]}</li>
+      </ul>
+    </div>
+    <div class="pop-up-buttons">
+    <p class="title" hidden>${info.title}</p>
+    <p class="description" hidden>${info.description}</p>
+    <p class="livelink" hidden>${info.liveLink}</p>
+    <p class="sourcelink" hidden>${info.sourceLink}</p>
+    <button class="btn1" id="w2button">See Project</button>
+    </div>
+  </div>
+  `;
 
+  
+  document.body.appendChild(popUpContainer);
+  const closingBtn = document.getElementById('closing-btn-pop');
+  closingBtn.addEventListener('click', () => {
+    popUpContainer.remove();
+  })
+};
 
-sectionsCard.forEach((data) => {
+/*sectionsCard.forEach((data) => {
   pop += `<div id="w2" class="work1">
   <div class="work1Discription" id="w2work1Discription">
     <h2>
@@ -86,7 +122,7 @@ sectionsCard.forEach((data) => {
       </button>
     <div class="pop-up-image">${data.image}</div>
     <p>
-    ${data.description1}
+    ${data.description}
     </p>
     <ul class="category">
       <li>${data.technology[0]}</li>
@@ -137,33 +173,4 @@ closeIcon.addEventListener('click', () => {
 multiProject.addEventListener('click', () => {
   css.classList.add('show');
   recent.classList.add('active');
-});
-
-
-const popUp = (info) => {
-  debugger;
-  const popUpContainer = document.createElement('section');
-  popUpContainer.id = "pop-up-main";
-  popUpContainer.innerHTML = `<div class="pop-content">
-    <div class="pop-up-header">
-      <h1 class="section-title">${info.title}</h1>
-      <button id="closing-btn-pop">
-        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
-      </button>
-    </div>
-    <div class="pop-up-image"></div>
-    <div class="pop-up-content">
-      <p class="pop-up-description"></p>
-      <ul class=""></ul>
-    </div>
-    <div class="pop-up-buttons"></div>
-  </div>
-  `;
-
-  
-  document.body.appendChild(popUpContainer);
-  const closingBtn = document.getElementById('closing-btn-pop');
-  closingBtn.addEventListener('click', () => {
-    popUpContainer.remove();
-  })
-};
+});*/
