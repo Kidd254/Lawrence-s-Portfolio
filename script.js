@@ -36,13 +36,13 @@ const sections = document.querySelector('.sections');
 let pop = "";
 const sectionsCard = [
   {
-    title1: 'Tonic',
-    description1:
+    title: 'Tonic',
+    description:
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
-    technology1: ['html', 'css', 'javascript'],
-    liveLink1: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
-    sourceLink1: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: '/images/Snapshoot Portfolio.png',
+    technology: ['html', 'css', 'javascript'],
+    liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
+    sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
+
   },
 
   {
@@ -52,7 +52,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio1.png',
+    
   },
   {
     title: 'Tonic',
@@ -61,7 +61,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio2.png',
+    
   },
   {
     title: 'Multi-Post Stories',
@@ -70,7 +70,6 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio3.png',
   },
 ];
 
@@ -80,7 +79,7 @@ sectionsCard.forEach((data) => {
   pop += `<div id="w2" class="work1">
   <div class="work1Discription" id="w2work1Discription">
     <h2>
-      <span id="w2d">${data.title1}</span>
+      <span id="w2d">${data.title}</span>
     </h2>
     <button id="closing-btn-pop">
         <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
@@ -90,21 +89,21 @@ sectionsCard.forEach((data) => {
     ${data.description1}
     </p>
     <ul class="category">
-      <li>${data.technology1[0]}</li>
-      <li>${data.technology1[1]}</li>
-      <li>${data.technology1[2]}</li>
+      <li>${data.technology[0]}</li>
+      <li>${data.technology[1]}</li>
+      <li>${data.technology[2]}</li>
     </ul>
   </div>
-  <p class="title" hidden>${data.title1}</p>
-  <p class="description" hidden>${data.description1}</p>
-  <p class="livelink" hidden>${data.liveLink1}</p>
-  <p class="sourcelink" hidden>${data.sourceLink1}</p>
+  <p class="title" hidden>${data.title}</p>
+  <p class="description" hidden>${data.description}</p>
+  <p class="livelink" hidden>${data.liveLink}</p>
+  <p class="sourcelink" hidden>${data.sourceLink}</p>
   <button class="btn1" id="w2button">See Project</button>
 </div>`;
   sections.innerHTML = pop;
 });
 
-const container = document.querySelector('.work-cards');
+const container = document.querySelector('.sections');
 const recent = document.querySelector('.Recentwork1');
 const closeIcon = document.querySelector('.crossimg');
 const css = document.querySelector('.css-display');

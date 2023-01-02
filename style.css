@@ -379,6 +379,77 @@ header {
   transition: 1s;
 }
 
+.sections {
+  display: grid;
+  row-gap: 24px;
+}
+
+.work1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("SVG/cardBG.svg");
+  background-repeat: no-repeat;
+  background-size: 118%;
+  padding-top: 84px;
+  gap: 12px;
+}
+
+.work1Description {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.work1 h2 {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+.work1 p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
+  padding-left: 2%;
+  list-style: none;
+}
+
+.category li {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  color: white;
+}
+
+.work1 button {
+  width: 100%;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -394,6 +465,7 @@ nav {
   height: 100vh;
   z-index: 1;
 }
+
 
 .nav-links1 {
   width: 0;
