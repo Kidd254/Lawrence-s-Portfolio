@@ -47,7 +47,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: '/images/Snapshoot Portfolio.png',
+    image: './images/Snapshoot Portfolio-section1.png',
   },
 
   {
@@ -68,7 +68,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio2.png',
+    image: './images/Snapshoot Portfolio-section1.png',
   },
   {
     title: 'Multi-Post Stories',
@@ -78,7 +78,7 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio3.png',
+    image: './images/Snapshoot Portfolio-section1.png',
   },
 ];
 
@@ -87,35 +87,38 @@ const popUp = (info) => {
   popUpContainer.id = "pop-up-main";
   popUpContainer.innerHTML = `<div class="pop-content">
     <div class="pop-up-header">
-      <h1 class="section-title">${info.title}</h1>
-      <button id="closing-btn-pop">
-        <i class="fa-solid fa-xmark menu-bar" id="btn"></i>
-      </button>
-      <ul>
-      <li>Canopy</li>
-      <li>Back End Dev</li>
-      <li>2015</li>
-      </ul>
+      <h1 class="section-titled">${info.title}</h1>
+     
+        <i class="fa-solid fa-xmark" id="btnd"></i>
+     
     </div>
+    <ul class="dynamic-list">
+      <li class="info1">${info.list[0]}</li>
+      <li class="info2">${info.list[1]}</li>
+      <li class="info3">${info.list[2]}</li>
+      </ul>
     <div class="pop-up-image"><img src="${info.image}"></div>
     <div class="pop-up-content">
       <p class="pop-up-description">${info.description}</p>
-      <ul class="">
       </p>
     <ul class="category">
-      <li>${info.technology[0]}</li>
-      <li>${info.technology[1]}</li>
-      <li>${info.technology[2]}</li>
+      <li class="cat1">${info.technology[0]}</li>
+      <li class="cat2">${info.technology[1]}</li>
+      <li class="cat3">${info.technology[2]}</li>
     </ul>
       </ul>
     </div>
-    <div class="pop-up-buttons"></div>
+    <div class="pop-up-buttons">
+    <button class="btn1" id="w2button"><a href="${info.liveLink}"See Project></a></button>
+    <button class="btn1" id="w2button"><a href="${info.sourceLink}" See Live></a></button>
+    
+    </div>
   </div>
   `;
 
   
   document.body.appendChild(popUpContainer);
-  const closingBtn = document.getElementById('closing-btn-pop');
+  const closingBtn = document.getElementById('btnd');
   closingBtn.addEventListener('click', () => {
     popUpContainer.remove();
   })
