@@ -47,7 +47,10 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio-section1.png',
+    image: "./images/Snapshoot Portfolio-pop-mobile.png",
+    image2: "./images/Snapshoot Portfolio-pop-desk.png",
+    btnImg:'images/Vector github.png',
+    btnImg2:"images/Icon.png",
   },
 
   {
@@ -58,7 +61,10 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio1.png',
+    image: "./images/Snapshoot Portfolio-pop-mobile.png",
+    image2: "./images/Snapshoot Portfolio-pop-desk.png",
+    btnImg:'images/Vector github.png',
+    btnImg2:"images/Icon.png",
   },
   {
     title: 'Tonic',
@@ -68,7 +74,10 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: './images/Snapshoot Portfolio-section1.png',
+    image: "./images/Snapshoot Portfolio-pop-mobile.png",
+    image2: "./images/Snapshoot Portfolio-pop-desk.png",
+    btnImg:'images/Vector github.png',
+    btnImg2:"images/Icon.png",
   },
   {
     title: 'Multi-Post Stories',
@@ -79,6 +88,9 @@ const sectionsCard = [
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
     image: './images/Snapshoot Portfolio-section1.png',
+    image2: "./images/Snapshoot Portfolio-pop-desk.png",
+    btnImg:'images/Vector github.png',
+    btnImg2:"images/Icon.png",
   },
 ];
 
@@ -98,6 +110,7 @@ const popUp = (info) => {
       <li class="info3">${info.list[2]}</li>
       </ul>
     <div class="pop-up-image"><img src="${info.image}"></div>
+    <div class="pop-up-image-desk"><img src="${info.image2}"></div>
     <div class="pop-up-content">
       <p class="pop-up-description">${info.description}</p>
       </p>
@@ -109,8 +122,10 @@ const popUp = (info) => {
       </ul>
     </div>
     <div class="pop-up-buttons">
-    <button class="btn1" id="w2button"><a href="${info.liveLink}"See Project></a></button>
-    <button class="btn1" id="w2button"><a href="${info.sourceLink}" See Live></a></button>
+    <div class="buttons">
+    <button class="btn1" id="w2button"><a class="prj"href="${info.liveLink}"See Project><img class="btn-img" src="${info.btnImg2}"></a></button>
+    <button class="btn1" id="w2button"><a class="prj2"href="${info.sourceLink}" See Live></a><img class="btn-img2"src="${info.btnImg}"></button>
+    </div>
     
     </div>
   </div>
