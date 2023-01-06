@@ -145,8 +145,8 @@ const popUp = (info) => {
     </div>
     <div class="pop-up-buttons">
     <div class="buttons">
-    <button class= 'btn1' id="w2button"><a class="prj"href="${info.liveLink}"See Project><img class="btn-img" src="${info.btnImg2}"></a></button>
-    <button class="btn1" id="w2button"><a class="prj2"href="${info.sourceLink}" See Live></a><img class="btn-img2"src="${info.btnImg}"></button>
+    <button class= 'btn1' id="w2button1"><a class="prj"href="${info.liveLink}">See Project<img class="btn-img" src="${info.btnImg2}"></a></button>
+    <button class="btn1" id="w2button2"><a class="prj2"href="${info.sourceLink}"> See Live</a><img class="btn-img2"src="${info.btnImg}"></button>
     </div>
     <div class="popping">
     <div class="pop-up-content1">
