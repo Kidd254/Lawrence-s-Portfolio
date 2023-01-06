@@ -40,6 +40,25 @@ const popDisplay= document.getElementById('pop');
 popDisplay.addEventListener('click', ()=>{
   popUp(sectionsCard[0]);
 });
+
+const popDisplay1= document.getElementById('pop1');
+
+popDisplay1.addEventListener('click', ()=>{
+  popUp(sectionsCard[1]);
+});
+
+const popDisplay2= document.getElementById('pop2');
+
+popDisplay2.addEventListener('click', ()=>{
+  popUp(sectionsCard[2]);
+});
+
+const popDisplay3= document.getElementById('pop3');
+
+popDisplay3.addEventListener('click', ()=>{
+  popUp(sectionsCard[3]);
+});
+
 const sections = document.querySelector('.sections');
 const pop = '';
 const sectionsCard = [
