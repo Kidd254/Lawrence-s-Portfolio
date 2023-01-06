@@ -148,6 +148,27 @@ const popUp = (info) => {
     <button class= 'btn1' id="w2button"><a class="prj"href="${info.liveLink}"See Project><img class="btn-img" src="${info.btnImg2}"></a></button>
     <button class="btn1" id="w2button"><a class="prj2"href="${info.sourceLink}" See Live></a><img class="btn-img2"src="${info.btnImg}"></button>
     </div>
+    <div class="popping">
+    <div class="pop-up-content1">
+      <p class="pop-up-description1">${info.description}</p>
+      </p>
+      </div>
+      <div class="left">
+    <ul class="category1">
+      <li class="cat11">${info.technology[0]}</li>
+      <li class="cat22">${info.technology[1]}</li>
+      <li class="cat33">${info.technology[2]}</li>
+    </ul>
+      </ul>
+    
+    <div class="pop-up-buttons1">
+    <div class="buttons1">
+    <button class= 'btn11' id="w2button10"><a class="prjj"href="${info.liveLink}">See Project<img class="btn-img1" src="${info.btnImg2}"></a></button>
+    <button class="btn11" id="w2button11"><a class="prj22"href="${info.sourceLink}"> See Live</a><img class="btn-img22"src="${info.btnImg}"></button>
+    </div>
+    </div>
+    </div>
+
     
     </div>
   </div>
