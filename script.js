@@ -1,4 +1,7 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-len */
+/* eslint-disable linebreak-style */
 const menuBox= document.getElementById('menu');
 const menuBar= document.getElementById('menu_bar');
 const closingBtn = document.getElementById('btn');
@@ -35,22 +38,22 @@ closingBtn.addEventListener('click', ()=>{
 const popDisplay= document.getElementById('pop');
 
 popDisplay.addEventListener('click', ()=>{
-popUp(sectionsCard[0]);
+  popUp(sectionsCard[0]);
 });
 const sections = document.querySelector('.sections');
-let pop = "";
+const pop = '';
 const sectionsCard = [
   {
     title: 'Tonic',
     list: ['Canopy', 'Back end Dev', '2015'],
-    description:'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: "./images/Snapshoot Portfolio-pop-mobile.png",
-    image2: "./images/Snapshoot Portfolio-pop-desk.png",
-    btnImg:'images/Vector github.png',
-    btnImg2:"images/Icon.png",
+    image: './images/Snapshoot Portfolio-pop-mobile.png',
+    image2: './images/Snapshoot Portfolio-pop-desk.png',
+    btnImg: 'images/Vector github.png',
+    btnImg2: 'images/Icon.png',
   },
 
   {
@@ -61,10 +64,10 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: "./images/Snapshoot Portfolio-pop-mobile.png",
-    image2: "./images/Snapshoot Portfolio-pop-desk.png",
-    btnImg:'images/Vector github.png',
-    btnImg2:"images/Icon.png",
+    image: './images/Snapshoot Portfolio-pop-mobile.png',
+    image2: './images/Snapshoot Portfolio-pop-desk.png',
+    btnImg: 'images/Vector github.png',
+    btnImg2: 'images/Icon.png',
   },
   {
     title: 'Tonic',
@@ -74,10 +77,10 @@ const sectionsCard = [
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
-    image: "./images/Snapshoot Portfolio-pop-mobile.png",
-    image2: "./images/Snapshoot Portfolio-pop-desk.png",
-    btnImg:'images/Vector github.png',
-    btnImg2:"images/Icon.png",
+    image: './images/Snapshoot Portfolio-pop-mobile.png',
+    image2: './images/Snapshoot Portfolio-pop-desk.png',
+    btnImg: 'images/Vector github.png',
+    btnImg2: 'images/Icon.png',
   },
   {
     title: 'Multi-Post Stories',
@@ -88,15 +91,15 @@ const sectionsCard = [
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
     image: './images/Snapshoot Portfolio-section1.png',
-    image2: "./images/Snapshoot Portfolio-pop-desk.png",
-    btnImg:'images/Vector github.png',
-    btnImg2:"images/Icon.png",
+    image2: './images/Snapshoot Portfolio-pop-desk.png',
+    btnImg: 'images/Vector github.png',
+    btnImg2: 'images/Icon.png',
   },
 ];
 
 const popUp = (info) => {
   const popUpContainer = document.createElement('section');
-  popUpContainer.id = "pop-up-main";
+  popUpContainer.id = 'pop-up-main';
   popUpContainer.innerHTML = `<div class="pop-content">
     <div class="pop-up-header">
       <h1 class="section-titled">${info.title}</h1>
@@ -123,7 +126,7 @@ const popUp = (info) => {
     </div>
     <div class="pop-up-buttons">
     <div class="buttons">
-    <button class="btn1" id="w2button"><a class="prj"href="${info.liveLink}"See Project><img class="btn-img" src="${info.btnImg2}"></a></button>
+    <button class= 'btn1' id="w2button"><a class="prj"href="${info.liveLink}"See Project><img class="btn-img" src="${info.btnImg2}"></a></button>
     <button class="btn1" id="w2button"><a class="prj2"href="${info.sourceLink}" See Live></a><img class="btn-img2"src="${info.btnImg}"></button>
     </div>
     
@@ -131,10 +134,10 @@ const popUp = (info) => {
   </div>
   `;
 
-  
+
   document.body.appendChild(popUpContainer);
   const closingBtn = document.getElementById('btnd');
   closingBtn.addEventListener('click', () => {
     popUpContainer.remove();
-  })
+  });
 };
