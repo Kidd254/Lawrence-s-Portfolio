@@ -191,7 +191,7 @@ function showInformation(input, information) {
   msg.innerText = information;
 
   message.className = 'error';
-  emailContent.className = 'error-box';
+  emailContent.className = 'error-display';
 }
 
 function revealError(input, information) {
@@ -202,7 +202,7 @@ function revealError(input, information) {
 function validateEmail(input, _invalidMessage) {
   const email = input.value.trim();
   if (!(email === String(email).toLowerCase())) {
-    return revealError(input, invalidMsg);
+    return revealError(input, _invalidMessage);
   }
   return true;
 }
@@ -214,7 +214,7 @@ const EMAIL_INVALID = 'Enter email in lowercase';
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const emailIsValid = validateEmail(form.elements.email, EMAIL_INVALID);
+  const emailIsValid = validateEmail(contactForm.elements.email, EMAIL_INVALID);
 
   if (emailIsValid) {
     contactForm.submit();
