@@ -2102,11 +2102,14 @@ ul.nav-links {
     display: block;
     flex: none;
     order: 2;
+    justify-content: center;
+    align-self: center;
   }
 
   .pop-up-image-desk img {
     height: 100%;
-    width: 100%;
+    width: 95%;
+    align-self: center;
   }
 
   .popping {
