@@ -218,3 +218,37 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.submit();
   }
 });
+
+const dataForm = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userText = document.getElementById('message');
+
+userName.addEventListener('input', () => {
+  dataForm.name = userName.value;
+  localStorage.setItem('data', JSON.stringify(dataForm));
+});
+
+userEmail.addEventListener('input', () => {
+  dataForm.email = userEmail.value;
+  localStorage.setItem('data', JSON.stringify(dataForm));
+});
+
+userText.addEventListener('input', () => {
+  dataForm.message = userText.value;
+  localStorage.setItem('data', JSON.stringify(dataForm));
+});
+
+if (localStorage.getItem('data')) {
+  let objectForm = localStorage.getItem('data');
+  objectForm = JSON.parse(objectForm);
+
+  document.getElementById('name').value = objectForm.name;
+  document.getElementById('email').value = objectForm.email;
+  document.getElementById('message').value = objectForm.message;
+}
