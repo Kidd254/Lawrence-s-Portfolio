@@ -2124,6 +2124,9 @@ ul.nav-links {
     flex-direction: column;
     order: 0;
     margin-top: 0;
+    justify-content: center;
+    align-content: center;
+    padding-top: 35px;
   }
 
   .pop-up-content {
