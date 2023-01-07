@@ -185,10 +185,10 @@ const popUp = (info) => {
   });
 };
 
-function showInformation(input, information) {
+function revealInformation(input, information) {
   const message = input.parentNode.querySelector('small');
   const emailContent = document.getElementById('email');
-  msg.innerText = information;
+  message.innerText = information;
 
   message.className = 'error';
   emailContent.className = 'error-display';
