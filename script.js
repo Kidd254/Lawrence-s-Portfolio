@@ -1,7 +1,9 @@
-/* eslint-disable require-jsdoc */
+/* eslint-disable linebreak-style */
+// eslint-disable-next-line linebreak-style
 /* eslint-disable no-unused-vars */
+/* eslint-disable require-jsdoc */
 /* eslint-disable max-len */
-/* eslint linebreak-style: ["error", "windows"]*/
+/* eslint-disable linebreak-style */
 const menuBox= document.getElementById('menu');
 const menuBar= document.getElementById('menu_bar');
 const closingBtn = document.getElementById('btn');
