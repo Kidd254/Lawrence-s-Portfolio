@@ -3,7 +3,7 @@
   "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
   "rules": 
   {
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
     "at-rule-no-unknown": [
       true,
       {
