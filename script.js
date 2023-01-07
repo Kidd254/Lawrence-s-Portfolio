@@ -1,6 +1,10 @@
+// eslint-disable-next-line linebreak-style
+// eslint-disable-next-line linebreak-style
+/* eslint-disable require-jsdoc */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
+/* eslint linebreak-style: ["error", "windows"]*/
 /* eslint-disable linebreak-style */
 const menuBox= document.getElementById('menu');
 const menuBar= document.getElementById('menu_bar');
@@ -180,3 +184,39 @@ const popUp = (info) => {
     popUpContainer.remove();
   });
 };
+
+function showInformation(input, information) {
+  const message = input.parentNode.querySelector('small');
+  const emailContent = document.getElementById('email');
+  msg.innerText = information;
+
+  message.className = 'error';
+  emailContent.className = 'error-box';
+}
+
+function revealError(input, information) {
+  return revealInformation(input, information, false);
+}
+
+// eslint-disable-next-line require-jsdoc
+function validateEmail(input, _invalidMessage) {
+  const email = input.value.trim();
+  if (!(email === String(email).toLowerCase())) {
+    return revealError(input, invalidMsg);
+  }
+  return true;
+}
+
+const contactForm = document.querySelector('#form-contact');
+
+const EMAIL_INVALID = 'Enter email in lowercase';
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailIsValid = validateEmail(form.elements.email, EMAIL_INVALID);
+
+  if (emailIsValid) {
+    contactForm.submit();
+  }
+});
