@@ -1,3 +1,4 @@
+/* eslint linebreak-style: ["error", "windows"]*/
 /* eslint-disable require-jsdoc */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
