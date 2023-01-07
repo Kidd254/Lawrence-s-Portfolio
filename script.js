@@ -74,7 +74,6 @@ const sectionsCard = [
     btnImg: 'images/Vector github.png',
     btnImg2: 'images/Icon.png',
   },
-
   {
     title: 'Multi-Post Stories',
     list: ['Canopy', 'Back end Dev', '2015'],
