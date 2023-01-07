@@ -161,13 +161,12 @@ const popUp = (info) => {
     </ul>
       </ul>
     
-    <div class="pop-up-buttons1">
     <div class="buttons1">
     <button class= 'btn11' id="w2button10"><a class="prjj"href="${info.liveLink}">See Project<img class="btn-img1" src="${info.btnImg2}"></a></button>
     <button class="btn11" id="w2button11"><a class="prj22"href="${info.sourceLink}"> See Live</a><img class="btn-img22"src="${info.btnImg}"></button>
     </div>
     </div>
-    </div>
+
 
     
     </div>
