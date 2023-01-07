@@ -69,7 +69,7 @@ const sectionsCard = [
   {
     title: 'Tonic',
     list: ['Canopy', 'Back end Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -83,7 +83,7 @@ const sectionsCard = [
     title: 'Multi-Post Stories',
     list: ['Canopy', 'Back end Dev', '2015'],
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -109,7 +109,7 @@ const sectionsCard = [
     title: 'Multi-Post Stories',
     list: ['Canopy', 'Back end Dev', '2015'],
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
