@@ -1315,6 +1315,14 @@ ul.nav-links {
   display: none;
 }
 
+.error-display {
+  border: 3px solid red;
+}
+
+.error {
+  color: red;
+}
+
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;

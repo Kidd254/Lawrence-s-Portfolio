@@ -1,5 +1,7 @@
 /* eslint-disable linebreak-style */
+// eslint-disable-next-line linebreak-style
 /* eslint-disable no-unused-vars */
+/* eslint-disable require-jsdoc */
 /* eslint-disable max-len */
 /* eslint-disable linebreak-style */
 const menuBox= document.getElementById('menu');
@@ -65,7 +67,7 @@ const sectionsCard = [
   {
     title: 'Tonic',
     list: ['Canopy', 'Back end Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -74,12 +76,11 @@ const sectionsCard = [
     btnImg: 'images/Vector github.png',
     btnImg2: 'images/Icon.png',
   },
-
   {
     title: 'Multi-Post Stories',
     list: ['Canopy', 'Back end Dev', '2015'],
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -105,7 +106,7 @@ const sectionsCard = [
     title: 'Multi-Post Stories',
     list: ['Canopy', 'Back end Dev', '2015'],
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -180,3 +181,39 @@ const popUp = (info) => {
     popUpContainer.remove();
   });
 };
+
+function revealInformation(input, information) {
+  const message = input.parentNode.querySelector('small');
+  const emailContent = document.getElementById('email');
+  message.innerText = information;
+
+  message.className = 'error';
+  emailContent.className = 'error-display';
+}
+
+function revealError(input, information) {
+  return revealInformation(input, information, false);
+}
+
+// eslint-disable-next-line require-jsdoc
+function validateEmail(input, _invalidMessage) {
+  const email = input.value.trim();
+  if (!(email === String(email).toLowerCase())) {
+    return revealError(input, _invalidMessage);
+  }
+  return true;
+}
+
+const contactForm = document.querySelector('#form-contact');
+
+const EMAIL_INVALID = 'Enter email in lowercase';
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailIsValid = validateEmail(contactForm.elements.email, EMAIL_INVALID);
+
+  if (emailIsValid) {
+    contactForm.submit();
+  }
+});
