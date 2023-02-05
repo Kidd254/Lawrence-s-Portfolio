@@ -195,10 +195,10 @@ function revealError(input, information) {
 }
 
 // eslint-disable-next-line require-jsdoc
-function validateEmail(input, _invalidMessage) {
+function validateEmail(input, information) {
   const email = input.value.trim();
   if (!(email === String(email).toLowerCase())) {
-    return revealError(input, _invalidMessage);
+    return revealError(input, information);
   }
   return true;
 }
@@ -210,7 +210,7 @@ const EMAIL_INVALID = 'Enter email in lowercase';
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const emailIsValid = validateEmail(contactForm.elements.email, EMAIL_INVALID);
+  const emailIsValid = validateEmail(contactForm.elements.email.value, EMAIL_INVALID);
 
   if (emailIsValid) {
     contactForm.submit();
@@ -222,7 +222,7 @@ const dataForm = {
   email: '',
   message: '',
 };
-dataForm = JSON.parse(localStorage.getItem('data')) || infoobj. infoObj;
+dataForm = JSON.parse(localStorage.getItem('info'));
 
 const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
@@ -242,7 +242,7 @@ userText.addEventListener('input', () => {
   dataForm.message = userText.value;
   localStorage.setItem('info', JSON.stringify(dataForm));
 });
-
+// retrieval of data stored in local storage
 if (localStorage.getItem('info')) {
   let objectForm = localStorage.getItem('info');
   objectForm = JSON.parse(objectForm);
