@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
-// eslint-disable-next-line linebreak-style
-/* eslint-disable no-unused-vars */
 /* eslint-disable require-jsdoc */
+/* eslint-disable linebreak-style */
 /* eslint-disable max-len */
 /* eslint-disable linebreak-style */
 const menuBox= document.getElementById('menu');
@@ -61,13 +60,12 @@ popDisplay3.addEventListener('click', ()=>{
   popUp(sectionsCard[3]);
 });
 
-const sections = document.querySelector('.sections');
-const pop = '';
 const sectionsCard = [
   {
     title: 'Tonic',
     list: ['Canopy', 'Back end Dev', '2015'],
-    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    description:
+    'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     technology: ['html', 'css', 'javascript'],
     liveLink: 'https://kidd254.github.io/Lawrence-s-Portfolio/',
     sourceLink: 'https://github.com/Kidd254/Lawrence-s-Portfolio',
@@ -182,6 +180,7 @@ const popUp = (info) => {
   });
 };
 
+// eslint-disable-next-line require-jsdoc
 function revealInformation(input, information) {
   const message = input.parentNode.querySelector('small');
   const emailContent = document.getElementById('email');
@@ -196,10 +195,10 @@ function revealError(input, information) {
 }
 
 // eslint-disable-next-line require-jsdoc
-function validateEmail(input, _invalidMessage) {
+function validateEmail(input, information) {
   const email = input.value.trim();
   if (!(email === String(email).toLowerCase())) {
-    return revealError(input, _invalidMessage);
+    return revealError(input, information);
   }
   return true;
 }
@@ -211,9 +210,44 @@ const EMAIL_INVALID = 'Enter email in lowercase';
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const emailIsValid = validateEmail(contactForm.elements.email, EMAIL_INVALID);
+  const emailIsValid = validateEmail(contactForm.elements.email.value, EMAIL_INVALID);
 
   if (emailIsValid) {
     contactForm.submit();
   }
 });
+
+const dataForm = {
+  name: '',
+  email: '',
+  message: '',
+};
+dataForm = JSON.parse(localStorage.getItem('info'));
+
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userText = document.getElementById('message');
+
+userName.addEventListener('input', () => {
+  dataForm.name = userName.value;
+  localStorage.setItem('info', JSON.stringify(dataForm));
+});
+
+userEmail.addEventListener('input', () => {
+  dataForm.email = userEmail.value;
+  localStorage.setItem('info', JSON.stringify(dataForm));
+});
+
+userText.addEventListener('input', () => {
+  dataForm.message = userText.value;
+  localStorage.setItem('info', JSON.stringify(dataForm));
+});
+// retrieval of data stored in local storage
+if (localStorage.getItem('info')) {
+  let objectForm = localStorage.getItem('info');
+  objectForm = JSON.parse(objectForm);
+
+  document.getElementById('name').value = objectForm.name;
+  document.getElementById('email').value = objectForm.email;
+  document.getElementById('message').value = objectForm.message;
+}
